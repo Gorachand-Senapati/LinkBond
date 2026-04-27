@@ -1,0 +1,55 @@
+POST http://localhost:9090/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "rahul1",
+    "password": "1234",
+    "email": "rahul@gmail.com",
+    "name": "Rahul Kumar"
+}
+    
+
+###
+POST http://localhost:9090/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "rahul@gmail.com",
+    "password": "1234"
+}
+
+###
+GET  http://localhost:9090/get_user_and_profile 
+content-type: application/json
+
+{
+  "token": "af07690f3bd0590a74589c3737ec3e1690eed932a5be64a0ca0ad95c10ca77c4"
+}
+
+
+###
+POST http://localhost:9090/update_profile_data 
+Content-Type: application/json
+
+{
+    "token": "9bc787bde9248d0322a4e22c5d6cd92cc5feb92c7c93b4e166d3a94b6fe69e68",
+    "bio": "Hi I am  a software engineer with 5 years of experience in the industry. I have a passion for developing innovative solutions and am always eager to learn new technologies.",
+     "currentPost": "Software Engineer",
+     "pastWork": [
+        {
+            "company": "Google",
+            "position": "SDE-1",
+            "years": "2 years+"
+        }
+     ],
+      "education": [
+        {
+            "school": "IIT Harinchowra",
+            "degree": "Bachelor of Technology",
+            "fieldOfStudy": "CSE"
+        }
+      ]
+}
+
+###
+GET http://localhost:9090/user/get_all_users

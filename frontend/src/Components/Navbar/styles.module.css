@@ -1,0 +1,41 @@
+.container{
+    padding: 1.2rem;
+}
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logoWrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* This ensures the container doesn't squash the image */
+    height: 90px; 
+    
+    
+}
+
+.logoImage {
+    /* Force the size */
+    height: 7rem !important; 
+    width: auto !important;
+    display: block;
+    object-fit: contain;
+}
+.navBarOptionContainer{
+    display: flex;
+    align-items: center; /* Ensures text aligns vertically with the logo */
+    gap: 1.5rem;
+}
+.buttonJoin{
+    background: #32D97F;
+    border-radius: 10px;
+    padding-block: 0.6rem;
+    padding-inline: 1.2rem;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
