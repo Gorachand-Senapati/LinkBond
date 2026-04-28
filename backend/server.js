@@ -21,8 +21,9 @@ const start = async() => { //for mongodb async because it need some time
     try{
         await mongoose.connect(process.env.MONGO_URI);//connected with mongo db
         console.log("Connected to MongoDB");
-        app.listen(process.env.PORT,() => {
-            console.log(`App is listening on port ${process.env.PORT}`);//port connectiion in backend
+        const PORT = process.env.PORT || 9090;
+        app.listen(PORT,() => {
+            console.log(`App is listening on port ${PORT}`);//port connectiion in backend
         });
     } catch(error){
         console.error("database connection failed", error);
