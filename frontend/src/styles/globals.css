@@ -7,4 +7,18 @@
 }
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+    width: 100%;
+}
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This kills the white space on the right */
+}
+
+/* Ensure images and containers don't force width */
+img, .workHistoryContainer, .singleCard {
+    max-width: 100%;
+    box-sizing: border-box;
 }

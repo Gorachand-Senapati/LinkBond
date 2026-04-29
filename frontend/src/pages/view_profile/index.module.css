@@ -88,4 +88,7 @@
   .profileContainer__flex{
     flex-direction: column;
   }
+   .recentActivitySection {
+        display: none; /* Hide recent activity on mobile for cleaner layout */
+    }
 }

@@ -39,3 +39,19 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    .navBar {
+        padding: 0.5rem;
+    }
+    .logoImage {
+        height: 4rem !important; /* Scale down on mobile */
+    }
+    .navBarOptionContainer {
+        gap: 0.5rem; /* Reduce gap on mobile */
+    }
+    .buttonJoin {
+        font-size: 0.6rem;
+        padding-inline: 0.8rem;
+    }
+}

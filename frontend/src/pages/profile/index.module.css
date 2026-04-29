@@ -166,10 +166,32 @@
 }
 
 /* responsive design for smaller screens  may be 600px */
-@media only screen and (max-width: 768px){
-  .profileContainer__flex{
-    flex-direction: column;
-  }
+@media only screen and (max-width: 768px) {
+    .recentActivitySection {
+        display: none; /* Hide recent activity on mobile for cleaner layout */
+    }
+     .profileContainer__flex {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center; /* Center align on mobile */
+    }
+  
+    .backDropContainer {
+        height: 20vh; /* Shorter header on mobile */
+    }
+    .backDrop, .backDrop__overlay {
+        bottom: -15%; /* Move it up slightly */
+        width: 8em;   /* Shrink profile picture */
+        height: 8em;
+    }
+    .profileContainer__details {
+        padding-top: 4rem; /* Adjust padding to fit the shifted image */
+    }
+    
+    /* Fix the Work History cards for mobile */
+    .workHistoryCard {
+        width: 100%; /* Full width cards */
+        min-width: 100%; 
+    }
 }
 
 

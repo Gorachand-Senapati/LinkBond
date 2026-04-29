@@ -100,7 +100,7 @@ useEffect(()=>{
                 <p>{userProfile.bio}</p>
               </div>
             </div>
-            <div style={{flex:"0.2rem"}}>
+            <div className={styles.recentActivitySection} style={{flex:"0.2rem"}}>
               <h3>Recent Activity</h3>
               {userPosts.map((post)=>{
                 return (
