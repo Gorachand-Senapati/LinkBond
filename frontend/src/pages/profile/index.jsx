@@ -101,7 +101,7 @@ export default function ProfilePage() {
           <div className={styles.profileContainer__details}>
            <div className={styles.profileContainer__flex}>
             <div style={{flex:"0.8rem"}}>
-              <div style={{display:"flex", width:"fit-content", alignItems:"center", gap:"1.2rem"}}>
+              <div style={{display:"flex", width:"100%", alignItems:"center", gap:"1.2rem"}}>
                 {/* <h2>{userProfile.userId.name}</h2> */}
                 <input className={styles.nameEdit} type="text" value={userProfile.userId.name} onChange={(e) =>{
                   setUserProfile({...userProfile, userId: {...userProfile.userId, name:e.target.value}})

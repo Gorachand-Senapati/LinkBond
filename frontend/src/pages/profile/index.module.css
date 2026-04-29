@@ -52,6 +52,9 @@
 
 .profileContainer__details{
     padding-top: 6.6rem;
+    width: 100%;       /* Ensure it fills the screen width */
+    box-sizing: border-box; /* Ensures padding doesn't push width out */
+    padding-inline: 1.3rem; /* Match your main container padding */
 }
 .card{
     display: flex;
@@ -93,6 +96,9 @@
 .nameEdit{
   font-size: 1.5rem;
   font-weight: bold;
+  width: 100%;
+    border: none;
+    background: transparent;
 }
 .updateProfileBtn{
       margin-top: 1rem;
@@ -158,11 +164,26 @@
     border-radius: 10px;
     border: 1px solid silver;
     width: 100%;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
 }
 
 .profileContainer__flex{
     display: flex;
     gap: 0.7rem;
+}
+.profileContainer__details input {
+    width: 100%; /* Changed from fit-content */
+    box-sizing: border-box;
+    display: block;
+}
+.profileContainer__details textarea {
+    width: 100%;
+    box-sizing: border-box;
+   
+    font-size: 1.1rem;
+    resize: vertical; /* Allows user to drag/resize height if needed */
+    margin-top: 0.5rem;
 }
 
 /* responsive design for smaller screens  may be 600px */
